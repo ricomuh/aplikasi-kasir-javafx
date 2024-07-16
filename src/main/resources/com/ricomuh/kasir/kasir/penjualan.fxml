@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.ricomuh.kasir.kasir.PenjualanController">
+    <TableView fx:id="tableView" prefHeight="400.0" prefWidth="595.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="barangIdColumn" prefWidth="75.0" text="Barang ID" />
+            <TableColumn fx:id="barangNameColumn" prefWidth="75.0" text="Barang Name" />
+            <TableColumn fx:id="barangPriceColumn" prefWidth="75.0" text="Barang Price" />
+            <TableColumn fx:id="customerIdColumn" prefWidth="75.0" text="Customer ID" />
+            <TableColumn fx:id="customerNameColumn" prefWidth="75.0" text="Customer Name" />
+            <TableColumn fx:id="quantityColumn" prefWidth="75.0" text="Quantity" />
+            <TableColumn fx:id="totalPriceColumn" prefWidth="75.0" text="Total Price" />
+            <TableColumn fx:id="createdAtColumn" prefWidth="75.0" text="Created At" />
+
+        </columns>
+    </TableView>
+    <HBox prefHeight="100.0" prefWidth="200.0">
+        <children>
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#add" text="Add" />
+            <Button fx:id="editButton" mnemonicParsing="false" onAction="#edit" text="Edit" />
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#delete" text="Delete" />
+        </children>
+    </HBox>
+</VBox>

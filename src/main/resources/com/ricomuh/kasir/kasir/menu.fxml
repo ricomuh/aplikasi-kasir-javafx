@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ricomuh.kasir.kasir.MenuController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <left>
+            <VBox prefHeight="400.0" prefWidth="145.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#home" prefHeight="39.0" prefWidth="150.0" text="Home">
+                     <VBox.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#barang" prefHeight="39.0" prefWidth="150.0" text="Barang">
+                     <VBox.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="61.0" mnemonicParsing="false" onAction="#penjualan" prefHeight="39.0" prefWidth="150.0" text="Penjualan">
+                     <VBox.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="108.0" mnemonicParsing="false" onAction="#customer" prefHeight="39.0" prefWidth="150.0" text="Customer">
+                     <VBox.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane fx:id="contentArea" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
